@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 3000;
+const port = 5000;
 
 app.use(cors());
 
@@ -45,5 +45,5 @@ const budget = {
  });
 
  app.listen(port, () => {
-    console.log('API served at http://localhost:3000');
+    console.log('API served at http://localhost:5000');
  });

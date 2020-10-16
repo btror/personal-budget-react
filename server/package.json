@@ -1,5 +1,5 @@
 {
-  "name": "personal-budget",
+  "name": "personal-budget-react",
   "version": "1.0.0",
   "description": "The path to NGInx main folder:\r /usr/share/nginx/html",
   "main": "server.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/btror/personal-budget.git"
+    "url": "git+https://github.com/btror/personal-budget-react.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/btror/personal-budget/issues"
+    "url": "https://github.com/btror/personal-budget-react/issues"
   },
   "homepage": "https://github.com/btror/personal-budget#readme",
   "dependencies": {

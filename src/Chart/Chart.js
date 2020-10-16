@@ -23,7 +23,7 @@ const state = {
 
 export default class Chart extends React.Component {
   componentDidMount() {
-    axios.get("http://localhost:3000/budget").then((res) => {
+    axios.get("http://localhost:5000/budget").then((res) => {
       for (var i = 0; i < res.data.length; i++) {
         state.datasets[0].data[i] = res.data[i].budget;
         state.labels[i] = res.data[i].title;
@@ -40,7 +40,7 @@ export default class Chart extends React.Component {
           options={{
             legend: {
               display: true,
-              position: "right",
+              position: "left",
             },
           }}
         />
