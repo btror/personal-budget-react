@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import Chart from '../Chart/Chart'
 
 function HomePage() {
   return (
@@ -40,9 +40,8 @@ function HomePage() {
 
         <section className="text-box">
           <h1>Chart</h1>
-          {/* <p>
-            <canvas id="myChart" width="400" height="400"></canvas>
-          </p> */}
+          
+          <Chart/>
           
         </section>
       </div>

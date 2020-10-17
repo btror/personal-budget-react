@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Pie } from "react-chartjs-2";
 import axios from "axios";
 
@@ -24,9 +24,10 @@ const state = {
 export default class Chart extends React.Component {
   componentDidMount() {
     axios.get("http://localhost:5000/budget").then((res) => {
-      for (var i = 0; i < res.data.length; i++) {
-        state.datasets[0].data[i] = res.data[i].budget;
-        state.labels[i] = res.data[i].title;
+      for (var i = 0; i < res.data.myBudget.length; i++) {
+        state.datasets[0].data[i] = res.data.myBudget[i].budget;
+        state.labels[i] = res.data.myBudget[i].title;
+        console.log(state.labels[i]);
       }
       this.setState({state});
     });
